@@ -22,6 +22,9 @@ pip3 install --user --upgrade   git+https://github.com/rndusr/torf-cli.git
 ```
 # 2- Geração do torrent a partir do arquivo
 
+Vou gerar um apontamento `.torrent`.
+Por exemplo, o arquivo Geospatial_Queries_using_Apache_Spark_GeoSpark_and_Hadoop.mp4 ser compartilhado através de um "atalho" chamado _Geospatial_Queries_using_Apache_Spark_GeoSpark_and_Hadoop.mp4.torrent
+
 ```bash
 torf ./Geospatial_Queries_using_Apache_Spark_GeoSpark_and_Hadoop.mp4 \
 -t udp://tracker_proxy:56/announce \
@@ -59,6 +62,8 @@ torf ./Geospatial_Queries_using_Apache_Spark_GeoSpark_and_Hadoop.mp4 \
 --private --date '2020-09-18 22:00:00' \
 -o _Geospatial_Queries_using_Apache_Spark_GeoSpark_and_Hadoop.mp4.torrent
 ```
+Pronto, agora você tem o arquivo \_Geospatial_Queries_using_Apache_Spark_GeoSpark_and_Hadoop.mp4.torrent para enviar para alguém que queira copiar
+o seu arquivo Geospatial_Queries_using_Apache_Spark_GeoSpark_and_Hadoop.mp4 direto de sua máquina.
 
 # 3- Adicionando um comentário
 
@@ -68,5 +73,5 @@ torf -i _Geospatial_Queries_using_Apache_Spark_GeoSpark_and_Hadoop.mp4.torrent \
  -o Geospatial_Queries_using_Apache_Spark_GeoSpark_and_Hadoop.mp4.torrent
 ```
 
-Ligue seu cliente torrent preferido para que o arquivo possa ser semeado
+Ligue seu cliente torrent preferido para que o arquivo possa ser semeado/baixado
 a outros solicitantes ao menos 1 vez.
